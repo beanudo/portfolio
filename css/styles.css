@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Serif', serif;
+}
+
+/*
+#BCBDAC -> grey (footer)
+#FBFCF1 -> dirty white (bg outside image) (251, 252, 240)
+#CFBE27 -> mustard
+#F27435 -> orange
+#F02475 -> pink
+#3B2D38 -> dark black (font color)
+*/
+
+body {
+  background-color: #FBFCF1;
+  color: #3B2D38;
+  background-image: url("../resources/contact-bg.png");
+  background-clip: content-box;
+  background-size: auto 600px;
+  background-repeat: no-repeat;
+}
+
+header {
+  padding:10px 40px;
+  float: left;
+}
+
+header #logo img {
+  height: 80px;
+}
+
+nav {
+  margin-right: 80px;
+  padding: 40px 0;
+  float: right;
+}
+
+nav a {
+  margin-left: 40px;
+  font-weight: bold;
+  color: #FBFCF1;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #3B2D38;
+}
+
+main {
+  clear: both;
+  padding: 0 50px;
+}
+
+main section {
+  float: right;
+  margin: 30px 0;
+}
+
+main h1 {
+  float: left;
+  font-size: 80px;
+  color: rgba(251, 252, 240, 0.7);
+  line-height: 100px;
+  padding: 150px 20px;
+}
+
+main section.introduction {
+  float: right;
+  margin: auto;
+  margin-bottom: 80px;
+  padding: 25px;
+  height: 400px;
+  max-width: 500px;
+  width: calc(100% - 100px);
+  overflow: auto;
+  background-color: rgba(251, 252, 240, 0.7);
+}
+
+main section.introduction h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px dotted #000;
+}
+
+main section.introduction article {
+  float: left;
+  height: 400px;
+  width: calc(100% - 70px)
+}
+
+main section.introduction aside {
+  float: right;
+  height: 400px;
+  width: 70px;
+}
+
+main section.introduction aside a {
+  display: block;
+  height: 100px;
+  width: 70px;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+#twitter-social {
+  background-image: url('../resources/googleplus.png')
+}
+
+#facebook-social {
+  background-image: url('../resources/facebook.png')
+}
+
+#linkedin-social {
+  background-image: url('../resources/linkedin.png')
+}
+
+#github-social {
+  background-image: url('../resources/github.png')
+}
+
+footer {
+  clear: both;
+  /* background-image: url("../resources/up-triangle.png"); */
+  /* background-repeat: repeat-x; */
+  background-color: #BCBDAC;
+  /* background-size: 10px 10px; */
+  text-align: center;
+  padding: 10px;
+  font-size: 10px;
+}
